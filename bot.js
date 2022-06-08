@@ -8,13 +8,13 @@ const fs = require("fs");
 const path = require("path");
 const events = require("./events");
 const ameer = require("./ameer");
-const pikachu = require('./pikachu');
+const MONU BOT = require('./MONU BOT');
 const { FakeDB, takeMessage } = require("./plugins/sql/fake");
 const chalk = require('chalk');
 const config = require('./config');
 const simpleGit = require('simple-git');
 const {WAConnection, MessageOptions, MessageType, Mimetype, Presence} = require('@adiwajshing/baileys');
-const {Message, StringSession, Image, Video} = require('./pikachu/');
+const {Message, StringSession, Image, Video} = require('./MONU BOT/');
 const { DataTypes } = require('sequelize');
 const { getMessage } = require("./plugins/sql/greetings");
 const git = simpleGit();
@@ -339,7 +339,7 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
                         } catch (error) {
                             if (config.NOLOG == 'off') {
                                 
-                                await conn.sendMessage(conn.user.jid, '*~_________~ Pikachu ~______~*' +
+                                await conn.sendMessage(conn.user.jid, '*~_________~ MONU BOT ~______~*' +
                                     '\n\n*😵 ' + error + '*\n\n```Report errors\njoin ⚠️Warning bot not allowed in the group\nhttps://chat.whatsapp.com/FsDjV2uRKce4wgMpAtYwyf``` ' 
                                     , MessageType.text);
                             }
@@ -365,4 +365,5 @@ ${chalk.blue.italic('ℹ️ Connecting to WhatsApp...')}`);
     }
 }
 
-whatsAsena();
+whatsAsena();w
+
